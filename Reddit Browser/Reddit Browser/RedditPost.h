@@ -13,5 +13,6 @@
 @property NSString *title;
 @property NSURL *imageUrl;
 @property NSString *subreddit;
+@property NSString *videoId;
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34F37ED172F283083A07E60A /* Pods_Reddit_Browser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED222CF1BEFF69BE3589820 /* Pods_Reddit_Browser.framework */; };
 		692393211E5206AD009648F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 692393201E5206AD009648F6 /* main.m */; };
 		692393241E5206AE009648F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 692393231E5206AE009648F6 /* AppDelegate.m */; };
 		6923932A1E5206B1009648F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 692393281E5206B0009648F6 /* Main.storyboard */; };
@@ -15,9 +16,12 @@
 		692393381E520863009648F6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 692393371E520863009648F6 /* MainViewController.m */; };
 		6923933B1E520C18009648F6 /* UIRedditPostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6923933A1E520C18009648F6 /* UIRedditPostTableViewCell.m */; };
 		6923933E1E52143B009648F6 /* RedditPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 6923933D1E52143B009648F6 /* RedditPost.m */; };
+		69D272B31E53299D00B05077 /* YTPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D272B21E53299D00B05077 /* YTPlayerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F480919F29FF5727E739F00 /* Pods-Reddit Browser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reddit Browser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Reddit Browser/Pods-Reddit Browser.debug.xcconfig"; sourceTree = "<group>"; };
+		60170645B443CEF53BDDFB6E /* Pods-Reddit Browser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reddit Browser.release.xcconfig"; path = "Pods/Target Support Files/Pods-Reddit Browser/Pods-Reddit Browser.release.xcconfig"; sourceTree = "<group>"; };
 		6923931C1E5206AD009648F6 /* Reddit Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reddit Browser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		692393201E5206AD009648F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		692393221E5206AE009648F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,10 +32,13 @@
 		692393301E5206B4009648F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		692393361E520863009648F6 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		692393371E520863009648F6 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		692393391E520C18009648F6 /* UIRedditPostTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRedditPostTableViewCell.h; sourceTree = "<group>"; };
-		6923933A1E520C18009648F6 /* UIRedditPostTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRedditPostTableViewCell.m; sourceTree = "<group>"; };
+		692393391E520C18009648F6 /* UIRedditPostTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIRedditPostTableViewCell.h; path = ../UIRedditPostTableViewCell.h; sourceTree = "<group>"; };
+		6923933A1E520C18009648F6 /* UIRedditPostTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIRedditPostTableViewCell.m; path = ../UIRedditPostTableViewCell.m; sourceTree = "<group>"; };
 		6923933C1E52143B009648F6 /* RedditPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedditPost.h; sourceTree = "<group>"; };
 		6923933D1E52143B009648F6 /* RedditPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedditPost.m; sourceTree = "<group>"; };
+		69D272B11E53299D00B05077 /* YTPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YTPlayerViewController.h; path = ../YTPlayerViewController.h; sourceTree = "<group>"; };
+		69D272B21E53299D00B05077 /* YTPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YTPlayerViewController.m; path = ../YTPlayerViewController.m; sourceTree = "<group>"; };
+		CED222CF1BEFF69BE3589820 /* Pods_Reddit_Browser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reddit_Browser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34F37ED172F283083A07E60A /* Pods_Reddit_Browser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,10 +56,10 @@
 		692393131E5206AC009648F6 = {
 			isa = PBXGroup;
 			children = (
-				692393391E520C18009648F6 /* UIRedditPostTableViewCell.h */,
-				6923933A1E520C18009648F6 /* UIRedditPostTableViewCell.m */,
 				6923931E1E5206AD009648F6 /* Reddit Browser */,
 				6923931D1E5206AD009648F6 /* Products */,
+				C0AAFA28F7A24BDF6F6F33A6 /* Pods */,
+				8FC2A95B201C7D5568B00F2E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +74,10 @@
 		6923931E1E5206AD009648F6 /* Reddit Browser */ = {
 			isa = PBXGroup;
 			children = (
+				69D272B11E53299D00B05077 /* YTPlayerViewController.h */,
+				69D272B21E53299D00B05077 /* YTPlayerViewController.m */,
+				692393391E520C18009648F6 /* UIRedditPostTableViewCell.h */,
+				6923933A1E520C18009648F6 /* UIRedditPostTableViewCell.m */,
 				692393221E5206AE009648F6 /* AppDelegate.h */,
 				692393231E5206AE009648F6 /* AppDelegate.m */,
 				692393281E5206B0009648F6 /* Main.storyboard */,
@@ -89,6 +101,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8FC2A95B201C7D5568B00F2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CED222CF1BEFF69BE3589820 /* Pods_Reddit_Browser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0AAFA28F7A24BDF6F6F33A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F480919F29FF5727E739F00 /* Pods-Reddit Browser.debug.xcconfig */,
+				60170645B443CEF53BDDFB6E /* Pods-Reddit Browser.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -96,9 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 692393331E5206B4009648F6 /* Build configuration list for PBXNativeTarget "Reddit Browser" */;
 			buildPhases = (
+				70D6963767729CF31390C36F /* [CP] Check Pods Manifest.lock */,
 				692393181E5206AD009648F6 /* Sources */,
 				692393191E5206AD009648F6 /* Frameworks */,
 				6923931A1E5206AD009648F6 /* Resources */,
+				E2768815D68244AA866ED459 /* [CP] Embed Pods Frameworks */,
+				FFB5FC7B5DE109C52EA1A6CB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,6 +187,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		70D6963767729CF31390C36F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E2768815D68244AA866ED459 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Reddit Browser/Pods-Reddit Browser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFB5FC7B5DE109C52EA1A6CB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Reddit Browser/Pods-Reddit Browser-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		692393181E5206AD009648F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -164,6 +244,7 @@
 				6923933E1E52143B009648F6 /* RedditPost.m in Sources */,
 				6923933B1E520C18009648F6 /* UIRedditPostTableViewCell.m in Sources */,
 				692393381E520863009648F6 /* MainViewController.m in Sources */,
+				69D272B31E53299D00B05077 /* YTPlayerViewController.m in Sources */,
 				692393211E5206AD009648F6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +361,7 @@
 		};
 		692393341E5206B4009648F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F480919F29FF5727E739F00 /* Pods-Reddit Browser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Reddit Browser/Info.plist";
@@ -291,6 +373,7 @@
 		};
 		692393351E5206B4009648F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60170645B443CEF53BDDFB6E /* Pods-Reddit Browser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Reddit Browser/Info.plist";

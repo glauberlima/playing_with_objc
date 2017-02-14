@@ -9,12 +9,15 @@
 #import "MainViewController.h"
 #import "RedditPost.h"
 #import "UIRedditPostTableViewCell.h"
+#import "YTPlayerViewController.h"
 
 @interface MainViewController ()
 
 @end
 
 @implementation MainViewController
+
+NSString *_videoId;
 
 NSMutableArray *_posts;
 
@@ -30,33 +33,19 @@ NSMutableArray *_posts;
     _posts = [[NSMutableArray alloc] init];
     
     
-//    RedditPost *postA = [[RedditPost alloc] init];
-//    postA.title = @"Did not get mauled by a bear or stung by a cactus to get this shot. Just another day on the Na Pali Coast in Kauai, Hawaii [OC][2048x1365]";
-//    postA.imageUrl = [NSURL URLWithString:@"http://i.imgur.com/66jL0qu.jpg"];
-//    [_posts addObject:postA];
-//    
-//    RedditPost *postB = [[RedditPost alloc] init];
-//    postB.title = @"Did not get mauled by a bear or stung by a cactus to get this shot. Just another day on the Na Pali Coast in Kauai, Hawaii [OC][2048x1365]";
-//    postB.imageUrl = [NSURL URLWithString:@"http://i.imgur.com/66jL0qu.jpg"];
-//    [_posts addObject:postB];
-//    
-//    RedditPost *postC = [[RedditPost alloc] init];
-//    postC.title = @"Did not get mauled by a bear or stung by a cactus to get this shot. Just another day on the Na Pali Coast in Kauai, Hawaii [OC][2048x1365]";
-//    postC.imageUrl = [NSURL URLWithString:@"http://i.imgur.com/66jL0qu.jpg"];
-//    [_posts addObject:postC];
     
-    // Load posts via Reddit api
-    //https://api.reddit.com/r/EarthPorn.json
+    //static NSString *url_string = @"https://api.reddit.com/r/videos.json";
+    static NSString *url_string = @"https://api.reddit.com/hot.json";
     
     NSError *error;
-    NSString *url_string = [NSString stringWithFormat: @"https://api.reddit.com/hot.json"];
     NSData *data = [NSData dataWithContentsOfURL: [NSURL URLWithString:url_string]];
     NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
     NSLog(@"json: %@", json);
     
     // TODO: Mudar para NSURLSession
+    // auto layout
     // AFNetworking
-    // Cocoa Pods (gerenciador de dependencia)
+            // Cocoa Pods (gerenciador de dependencia) DONE
     // dispatch async
     
     
@@ -73,11 +62,22 @@ NSMutableArray *_posts;
         NSString *url = [arrB valueForKey:@"thumbnail"];
         NSString *subreddit = [arrB valueForKey:@"subreddit"];
         
+        NSString *domain = [arrB valueForKey:@"domain"];
+        
         
         RedditPost *postA = [[RedditPost alloc] init];
         postA.title = title;
         postA.imageUrl = [NSURL URLWithString:url];
         postA.subreddit = subreddit;
+        
+        if([domain isEqualToString:@"youtube.com"]) {
+            NSString * videoUrl =[arrB valueForKey:@"url"];
+            
+            postA.videoId = [videoUrl stringByReplacingOccurrencesOfString:@"https://www.youtube.com/watch?v=" withString:@""];
+           
+        }
+        
+        
         [_posts addObject:postA];
         
         
@@ -85,10 +85,10 @@ NSMutableArray *_posts;
     }
     
 
-
     
     
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -130,7 +130,34 @@ NSMutableArray *_posts;
 
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([[segue identifier] isEqualToString:@"PlayVideo"]) {
+        
+        
+        YTPlayerViewController *vc = [segue destinationViewController];
+        vc.videoId = _videoId;
+        
+    }
+    
+    
+}
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    RedditPost *post = _posts[indexPath.row];
+    
+    if(post.videoId != nil) {
+        
+        _videoId = post.videoId;
+        
+        [self performSegueWithIdentifier:@"PlayVideo" sender:self];
+
+    }
+
+    
+    
+}
 
 
 /*

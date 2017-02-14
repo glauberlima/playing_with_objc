@@ -58,10 +58,34 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Reddit Browser" id="e51-86-dAV"/>
+                    <connections>
+                        <segue destination="Mgv-JE-oiQ" kind="show" identifier="PlayVideo" id="L2E-c9-5d6"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e5V-xv-4Sy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="71.25" y="-21.12676056338028"/>
+        </scene>
+        <!--Player View Controller-->
+        <scene sceneID="Xxi-DW-D3e">
+            <objects>
+                <viewController id="Mgv-JE-oiQ" customClass="YTPlayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zva-Zc-i6i"/>
+                        <viewControllerLayoutGuide type="bottom" id="qMl-bA-WK8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bVw-fa-NSQ" customClass="YTPlayerView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="playerView" destination="bVw-fa-NSQ" id="ESL-ge-cC3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XBd-yi-s3K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1151" y="-21"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PM9-Kf-uH0">
