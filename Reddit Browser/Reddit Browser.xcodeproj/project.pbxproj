@@ -16,7 +16,9 @@
 		692393381E520863009648F6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 692393371E520863009648F6 /* MainViewController.m */; };
 		6923933B1E520C18009648F6 /* UIRedditPostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6923933A1E520C18009648F6 /* UIRedditPostTableViewCell.m */; };
 		6923933E1E52143B009648F6 /* RedditPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 6923933D1E52143B009648F6 /* RedditPost.m */; };
+		6988FCD01E5C9E9A002D2370 /* RedditAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 6988FCCF1E5C9E9A002D2370 /* RedditAPI.m */; };
 		69D272B31E53299D00B05077 /* YTPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D272B21E53299D00B05077 /* YTPlayerViewController.m */; };
+		69E949031E5CC8FF00FDD225 /* ViewPictureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E949021E5CC8FF00FDD225 /* ViewPictureController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +38,12 @@
 		6923933A1E520C18009648F6 /* UIRedditPostTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIRedditPostTableViewCell.m; path = ../UIRedditPostTableViewCell.m; sourceTree = "<group>"; };
 		6923933C1E52143B009648F6 /* RedditPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedditPost.h; sourceTree = "<group>"; };
 		6923933D1E52143B009648F6 /* RedditPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedditPost.m; sourceTree = "<group>"; };
+		6988FCCE1E5C9E9A002D2370 /* RedditAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedditAPI.h; sourceTree = "<group>"; };
+		6988FCCF1E5C9E9A002D2370 /* RedditAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedditAPI.m; sourceTree = "<group>"; };
 		69D272B11E53299D00B05077 /* YTPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YTPlayerViewController.h; path = ../YTPlayerViewController.h; sourceTree = "<group>"; };
 		69D272B21E53299D00B05077 /* YTPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YTPlayerViewController.m; path = ../YTPlayerViewController.m; sourceTree = "<group>"; };
+		69E949011E5CC8FF00FDD225 /* ViewPictureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewPictureController.h; path = ../ViewPictureController.h; sourceTree = "<group>"; };
+		69E949021E5CC8FF00FDD225 /* ViewPictureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewPictureController.m; path = ../ViewPictureController.m; sourceTree = "<group>"; };
 		CED222CF1BEFF69BE3589820 /* Pods_Reddit_Browser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reddit_Browser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -74,6 +80,8 @@
 		6923931E1E5206AD009648F6 /* Reddit Browser */ = {
 			isa = PBXGroup;
 			children = (
+				69E949011E5CC8FF00FDD225 /* ViewPictureController.h */,
+				69E949021E5CC8FF00FDD225 /* ViewPictureController.m */,
 				69D272B11E53299D00B05077 /* YTPlayerViewController.h */,
 				69D272B21E53299D00B05077 /* YTPlayerViewController.m */,
 				692393391E520C18009648F6 /* UIRedditPostTableViewCell.h */,
@@ -89,6 +97,8 @@
 				692393371E520863009648F6 /* MainViewController.m */,
 				6923933C1E52143B009648F6 /* RedditPost.h */,
 				6923933D1E52143B009648F6 /* RedditPost.m */,
+				6988FCCE1E5C9E9A002D2370 /* RedditAPI.h */,
+				6988FCCF1E5C9E9A002D2370 /* RedditAPI.m */,
 			);
 			path = "Reddit Browser";
 			sourceTree = "<group>";
@@ -245,7 +255,9 @@
 				6923933B1E520C18009648F6 /* UIRedditPostTableViewCell.m in Sources */,
 				692393381E520863009648F6 /* MainViewController.m in Sources */,
 				69D272B31E53299D00B05077 /* YTPlayerViewController.m in Sources */,
+				69E949031E5CC8FF00FDD225 /* ViewPictureController.m in Sources */,
 				692393211E5206AD009648F6 /* main.m in Sources */,
+				6988FCD01E5C9E9A002D2370 /* RedditAPI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

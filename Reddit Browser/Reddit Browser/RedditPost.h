@@ -10,9 +10,9 @@
 
 @interface RedditPost : NSObject
 
-@property NSString *title;
-@property NSURL *imageUrl;
-@property NSString *subreddit;
-@property NSString *videoId;
+@property (nonatomic) NSString *title;
+@property (nonatomic) NSURL *imageUrl;
+@property (nonatomic) NSString *subreddit;
+@property (nonatomic) NSString *videoId;
 
 @end
