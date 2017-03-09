@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6988FCB01E5C7523002D2370 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6988FCAF1E5C7523002D2370 /* main.m */; };
+		6988FCB31E5C7523002D2370 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6988FCB21E5C7523002D2370 /* AppDelegate.m */; };
+		6988FCB61E5C7523002D2370 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6988FCB51E5C7523002D2370 /* ViewController.m */; };
+		6988FCB91E5C7523002D2370 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6988FCB71E5C7523002D2370 /* Main.storyboard */; };
+		6988FCBB1E5C7523002D2370 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6988FCBA1E5C7523002D2370 /* Assets.xcassets */; };
+		6988FCBE1E5C7523002D2370 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6988FCBC1E5C7523002D2370 /* LaunchScreen.storyboard */; };
+		6988FCC71E5C7781002D2370 /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6988FCC61E5C7781002D2370 /* PhotosViewController.m */; };
+		6988FCCA1E5C7821002D2370 /* RedditPhotosAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 6988FCC91E5C7821002D2370 /* RedditPhotosAPI.m */; };
+		6988FCCD1E5C787F002D2370 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6988FCCC1E5C787F002D2370 /* Photo.m */; };
+		6D624675159F65BFC243D95F /* libPods-Photo Browser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A949FD74B35674C9416C4E73 /* libPods-Photo Browser.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		31C423F59F6F5C674B2348EC /* Pods-Photo Browser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Photo Browser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Photo Browser/Pods-Photo Browser.debug.xcconfig"; sourceTree = "<group>"; };
+		6988FCAB1E5C7523002D2370 /* Photo Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Photo Browser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6988FCAF1E5C7523002D2370 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6988FCB11E5C7523002D2370 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6988FCB21E5C7523002D2370 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6988FCB41E5C7523002D2370 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6988FCB51E5C7523002D2370 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6988FCB81E5C7523002D2370 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6988FCBA1E5C7523002D2370 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6988FCBD1E5C7523002D2370 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6988FCBF1E5C7523002D2370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6988FCC51E5C7781002D2370 /* PhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosViewController.h; sourceTree = "<group>"; };
+		6988FCC61E5C7781002D2370 /* PhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosViewController.m; sourceTree = "<group>"; };
+		6988FCC81E5C7821002D2370 /* RedditPhotosAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedditPhotosAPI.h; sourceTree = "<group>"; };
+		6988FCC91E5C7821002D2370 /* RedditPhotosAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedditPhotosAPI.m; sourceTree = "<group>"; };
+		6988FCCB1E5C787F002D2370 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		6988FCCC1E5C787F002D2370 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		A8BD546362936F8E76513BCD /* Pods-Photo Browser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Photo Browser.release.xcconfig"; path = "Pods/Target Support Files/Pods-Photo Browser/Pods-Photo Browser.release.xcconfig"; sourceTree = "<group>"; };
+		A949FD74B35674C9416C4E73 /* libPods-Photo Browser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Photo Browser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6988FCA81E5C7522002D2370 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D624675159F65BFC243D95F /* libPods-Photo Browser.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18B042ED09B462C8EA0159FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A949FD74B35674C9416C4E73 /* libPods-Photo Browser.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6988FCA21E5C7522002D2370 = {
+			isa = PBXGroup;
+			children = (
+				6988FCAD1E5C7523002D2370 /* Photo Browser */,
+				6988FCAC1E5C7523002D2370 /* Products */,
+				9D1D96E3CFCE051FAA67B4E6 /* Pods */,
+				18B042ED09B462C8EA0159FB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6988FCAC1E5C7523002D2370 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6988FCAB1E5C7523002D2370 /* Photo Browser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6988FCAD1E5C7523002D2370 /* Photo Browser */ = {
+			isa = PBXGroup;
+			children = (
+				6988FCB11E5C7523002D2370 /* AppDelegate.h */,
+				6988FCB21E5C7523002D2370 /* AppDelegate.m */,
+				6988FCB41E5C7523002D2370 /* ViewController.h */,
+				6988FCB51E5C7523002D2370 /* ViewController.m */,
+				6988FCB71E5C7523002D2370 /* Main.storyboard */,
+				6988FCBA1E5C7523002D2370 /* Assets.xcassets */,
+				6988FCBC1E5C7523002D2370 /* LaunchScreen.storyboard */,
+				6988FCBF1E5C7523002D2370 /* Info.plist */,
+				6988FCAE1E5C7523002D2370 /* Supporting Files */,
+				6988FCC51E5C7781002D2370 /* PhotosViewController.h */,
+				6988FCC61E5C7781002D2370 /* PhotosViewController.m */,
+				6988FCC81E5C7821002D2370 /* RedditPhotosAPI.h */,
+				6988FCC91E5C7821002D2370 /* RedditPhotosAPI.m */,
+				6988FCCB1E5C787F002D2370 /* Photo.h */,
+				6988FCCC1E5C787F002D2370 /* Photo.m */,
+			);
+			path = "Photo Browser";
+			sourceTree = "<group>";
+		};
+		6988FCAE1E5C7523002D2370 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6988FCAF1E5C7523002D2370 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9D1D96E3CFCE051FAA67B4E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31C423F59F6F5C674B2348EC /* Pods-Photo Browser.debug.xcconfig */,
+				A8BD546362936F8E76513BCD /* Pods-Photo Browser.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6988FCAA1E5C7522002D2370 /* Photo Browser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6988FCC21E5C7523002D2370 /* Build configuration list for PBXNativeTarget "Photo Browser" */;
+			buildPhases = (
+				41DA3D84EDB1AB2571B2A33F /* [CP] Check Pods Manifest.lock */,
+				6988FCA71E5C7522002D2370 /* Sources */,
+				6988FCA81E5C7522002D2370 /* Frameworks */,
+				6988FCA91E5C7522002D2370 /* Resources */,
+				33C77EBAA74217F105FB4EA9 /* [CP] Embed Pods Frameworks */,
+				14DC1552766C2ED118C94986 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Photo Browser";
+			productName = "Photo Browser";
+			productReference = 6988FCAB1E5C7523002D2370 /* Photo Browser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6988FCA31E5C7522002D2370 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "CI&T";
+				TargetAttributes = {
+					6988FCAA1E5C7522002D2370 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6988FCA61E5C7522002D2370 /* Build configuration list for PBXProject "Photo Browser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6988FCA21E5C7522002D2370;
+			productRefGroup = 6988FCAC1E5C7523002D2370 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6988FCAA1E5C7522002D2370 /* Photo Browser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6988FCA91E5C7522002D2370 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6988FCBE1E5C7523002D2370 /* LaunchScreen.storyboard in Resources */,
+				6988FCBB1E5C7523002D2370 /* Assets.xcassets in Resources */,
+				6988FCB91E5C7523002D2370 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14DC1552766C2ED118C94986 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Photo Browser/Pods-Photo Browser-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33C77EBAA74217F105FB4EA9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Photo Browser/Pods-Photo Browser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41DA3D84EDB1AB2571B2A33F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6988FCA71E5C7522002D2370 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6988FCCD1E5C787F002D2370 /* Photo.m in Sources */,
+				6988FCB61E5C7523002D2370 /* ViewController.m in Sources */,
+				6988FCC71E5C7781002D2370 /* PhotosViewController.m in Sources */,
+				6988FCCA1E5C7821002D2370 /* RedditPhotosAPI.m in Sources */,
+				6988FCB31E5C7523002D2370 /* AppDelegate.m in Sources */,
+				6988FCB01E5C7523002D2370 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6988FCB71E5C7523002D2370 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6988FCB81E5C7523002D2370 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6988FCBC1E5C7523002D2370 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6988FCBD1E5C7523002D2370 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6988FCC01E5C7523002D2370 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6988FCC11E5C7523002D2370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6988FCC31E5C7523002D2370 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31C423F59F6F5C674B2348EC /* Pods-Photo Browser.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Photo Browser/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ciandt.apple.ios.apps.Photo-Browser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6988FCC41E5C7523002D2370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8BD546362936F8E76513BCD /* Pods-Photo Browser.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Photo Browser/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ciandt.apple.ios.apps.Photo-Browser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6988FCA61E5C7522002D2370 /* Build configuration list for PBXProject "Photo Browser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6988FCC01E5C7523002D2370 /* Debug */,
+				6988FCC11E5C7523002D2370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6988FCC21E5C7523002D2370 /* Build configuration list for PBXNativeTarget "Photo Browser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6988FCC31E5C7523002D2370 /* Debug */,
+				6988FCC41E5C7523002D2370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6988FCA31E5C7522002D2370 /* Project object */;
+}
